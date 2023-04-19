@@ -1,0 +1,14 @@
+p{
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    /* overflow:auto; */
+    white-space:nowrap;
+    /* white-space:normal; */
+    overflow: scroll;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: 13px dotted red;
+    border-radius: 50%;
+}
