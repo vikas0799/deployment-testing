@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="download.jfif" alt="" id="img1">
+    
+
+    <script>
+        async function fetchData(){
+            let respone=await fetch("https://dog.ceo/api/breeds/image/random");
+            console.log(respone);
+            let data=await respone.json();
+            console.log(data.massage);
+           let ans= document.getElementById("img1");
+        //    ans.src="download2.jfif";
+        ans.src=data.massage;
+        }
+        fetchData();
+    </script>
+</body>
+</html>

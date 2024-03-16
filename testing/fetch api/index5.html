@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <img src="download.jfif" alt="" id="xyz">
+
+    <script>
+        //   fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+        //   .then((responce)=>{return responce.json()})
+        //   .then((data)=>{
+        //     console.log(data.disclaimer);
+        //   })
+        //   .catch((err)=>{
+        //     console.log("hello error is happen");
+        //     // console.log(err);
+        //   })
+
+   async function display(){
+        try {
+            // let responce=await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+            // let responce=await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+            let responce=await fetch('https://dog.ceo/api/breeds/image/random');
+            let data=await responce.json();
+            console.log(data);
+            // console.log("hello inside data");
+            const imageurl=data.message;
+            console.log(imageurl);
+            document.getElementById("xyz").src=imageurl;
+
+        } catch (error) {
+            console.log("hello network error");
+        } 
+    }
+    display();
+
+    </script>
+</body>
+</html>

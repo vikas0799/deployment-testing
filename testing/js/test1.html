@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React and ReactDOM</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        // const heading = React.createElement("h1", {}, "hello g10");
+        // console.log(heading);
+        //    console.log(ReactDOM);
+        // let x = Symbol('john');
+        // let y = Symbol('john');
+        // if (x == y)
+        //     console.log("vikas");
+        // else
+        //     console.log("patel");
+
+            // console.log(typeof(x));
+            // console.log(x);
+            // console.log(y);
+
+            let obj={};
+            // obj[name]="vikas patel";
+            // console.log(obj);
+            // obj[x]="vikas";
+            // obj[y]="patel";
+            // console.log(obj);
+
+            obj[Symbol('john')]="vikas";
+            obj[Symbol('john')]="patel";
+            obj[Symbol('john')]="rohit";
+            // console.log(obj);
+            obj["name"]="john wick";
+            let ans=obj[Symbol('john')];
+            console.log(ans);
+
+       
+// Private property is not enumerable
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+// expected output: []
+    </script>
+
+</body>
+
+</html>
