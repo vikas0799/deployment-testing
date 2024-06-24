@@ -1,0 +1,67 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "name": "rohit patvcel",
+      "age": 25,
+      "dist": "azamxdvdjdfsddfcgarh",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "vidfkas patel",
+      "age": 25,
+      "dist": "azamgarh"
+    },
+    {
+      "id": "b868",
+      "name": "rohit patvcel",
+      "age": 25,
+      "dist": "azamxdvdvcgarh"
+    },
+    {
+      "id": "9df4",
+      "name": "suddeep",
+      "email": "sudeep@google.com",
+      "message": "i am vikas"
+    },
+    {
+      "id": "0ce2",
+      "name": "dhruv",
+      "email": "dhruv@gmail.com",
+      "message": "bad student"
+    },
+    {
+      "id": "e205",
+      "name": "dhruv",
+      "email": "dhruv@gmail.com",
+      "message": "bad student"
+    }
+  ]
+}
