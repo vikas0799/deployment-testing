@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(background.css);
+
+html,
+body,
+#root {
+  @apply w-screen overflow-x-hidden;
+}
+
+.background {
+  background-image: var(--bg);
+}
+
+.coolfont {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
+    helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+.schedule__desktop-view-list {
+  @apply absolute font-medium text-gray-600 select-none left-1 top-2;
+}
+
+.desktopview__employee {
+  @apply flex p-0.5 whitespace-nowrap hover:bg-slate-100;
+}
+
+.mobileview__employee {
+  @apply flex text-xl font-medium p-0.5;
+}
