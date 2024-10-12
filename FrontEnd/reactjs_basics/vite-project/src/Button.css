@@ -1,0 +1,13 @@
+div{
+    color: red;
+    background-color: rgb(73, 205, 205);
+    height: 300px;
+    width: 300px;
+}
+
+.change{
+    font-size: xx-large;
+}
+.final{
+    font-size: xx-small;
+}

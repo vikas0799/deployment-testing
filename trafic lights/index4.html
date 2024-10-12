@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traffic lights</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            margin: 20px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        main {
+            background-color: rgb(160, 202, 202);
+            width: 150px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+
+    <script>
+        let i = 0;
+        while (i<2) {
+            document.getElementsByTagName("div")[0].classList.remove("red");
+            document.getElementsByTagName("div")[1].classList.remove("yellow");
+            document.getElementsByTagName("div")[2].classList.remove("green");
+            console.log(i);
+            if (i % 3 == 0) {
+                document.getElementsByTagName("div")[0].classList.add("red");
+                setTimeout(() => {
+                    console.log(i);
+                }, 3000);
+            } else {
+                if (i % 3 == 1) {
+                    document.getElementsByTagName("div")[1].classList.add("yellow");
+                    setTimeout(() => {
+                        console.log(i);
+                }, 1000);
+                }
+                else {
+                    document.getElementsByTagName("div")[2].classList.add("green");
+                    setTimeout(() => {
+                        console.log(i);
+                }, 5000);
+                }
+            }
+            console.log("loop completed");
+            
+            i++;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "vikas_math",
+  "version": "1.0.0",
+  "description": "a simple packege for arithmetics operation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "module",
+    "commonjs"
+  ],
+  "author": "vikas patel",
+  "license": "ISC"
+}

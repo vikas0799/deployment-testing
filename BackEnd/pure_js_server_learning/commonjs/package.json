@@ -1,0 +1,16 @@
+{
+  "name": "mr_wick",
+  "version": "1.0.0",
+  "description": "chitkara",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vikas patel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.6.2",
+    "redux": "^5.0.1"
+  }
+}

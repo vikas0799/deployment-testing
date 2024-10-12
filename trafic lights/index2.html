@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+        }
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- traffic lights with 1 box and same interval  -->
+    <div></div>
+
+
+    <script>
+       
+        let i = 0;
+        setInterval(() => {
+            i++;
+            document.getElementsByTagName("div")[0].classList.remove("green");
+            document.getElementsByTagName("div")[0].classList.remove("yellow");
+            document.getElementsByTagName("div")[0].classList.remove("red");
+
+            console.log(i);
+            if (i % 3 == 0) {
+                document.getElementsByTagName("div")[0].classList.add("red");
+            } else {
+                if (i % 3 == 1) {
+                    document.getElementsByTagName("div")[0].classList.add("yellow");
+                }
+                else {
+                    document.getElementsByTagName("div")[0].classList.add("green");
+                }
+            }
+        }, 4000);
+
+        // }
+    </script>
+</body>
+
+</html>

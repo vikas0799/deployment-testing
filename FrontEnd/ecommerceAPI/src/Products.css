@@ -1,0 +1,56 @@
+/* Products.css */
+
+.category {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:gainsboro;
+  }
+  
+  .category-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  
+  .category-info {
+    margin-left: 20px;
+  }
+  
+  .category-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .category-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .category-price {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  
+  .category-rating {
+    font-size: 16px;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
