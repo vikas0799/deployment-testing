@@ -19,16 +19,16 @@ function add(a, b) {
   }
   
 //   common js
-//   module.exports = {
-//     add,
-//     subtract,
-//     multiply,
-//     divide,
-//   };
+  module.exports = {
+    add,
+    subtract,
+    multiply,
+    divide,
+  };
 
 //   module.exports = vikas; 
 
-export default {add,subtract,multiply,divide} //import as a object
+// export default {add,subtract,multiply,divide} //import as a object
 // export  {add,subtract,multiply,divide}  //import as object destructure
 
 

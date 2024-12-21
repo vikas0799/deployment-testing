@@ -1,10 +1,12 @@
 // common js 
 
-// const math = require('./add.js');
+const math = require('./add.js');
 // const  {add,subtract,multiply,divide}=require('./add.js')
 // const math1=require('./sub.js')
 // console.log(module.children);
-// console.log(math);
+console.log(math);
+console.log(module);
+
 // console.log(math1);
 // console.log(add);
 

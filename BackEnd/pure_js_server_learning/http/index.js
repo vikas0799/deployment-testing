@@ -10,8 +10,7 @@ const fs=require('fs');
     let date=new Date();
     fs.appendFile("file1.txt",`\n hello from chitkara at ${date}`,"utf8",(error)=>{
          if(error)throw error;
-         console.log("logged successfully");
-         
+         console.log("logged successfully");  
     })
     // console.log(req);
     // res.json({

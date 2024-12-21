@@ -5,6 +5,8 @@ http.createServer(function (req, res) {
   fs.readFile('file1.txt', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
-    return res.end();
+    console.log(data.toString());
+    
+     res.end();
   });
-}).listen(8080);8
+}).listen(8080);
